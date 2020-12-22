@@ -1,0 +1,108 @@
+<html>  
+<head>
+<title>Register Now</title>  
+</head>  
+
+<style>
+body {
+  background-image: url('images/galaxy.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+	}
+.a {
+	margin: auto;
+	width: 60%;
+	border: 3px solid #FFFFF0;
+	padding: 10px;
+	background-color: #E0FFFF;
+	opacity: 0.95;
+	}
+.b {
+	margin: auto;
+	width: 60%;
+	border: 3px solid #FFFFF0;
+	padding: 10px;
+	background-color: #E0FFFF;
+	opacity: 0.9;
+
+	}
+</style>
+
+<body>
+<center>
+	<div class="a">
+		<h1>Join the TEAM today</h1>
+		<p style="font-size: 16px;">already have an account?</p>
+		<a href="login.html" ><b><i>Sign In</i></b></a>
+	</div>
+</center>
+<div class="b">
+<form method="post" action="login.html">  
+  
+<label for="fname">First Name: </label>
+	<input type="text" id="fname">
+	<br><br>
+<label for="lname">Last Name: </label>
+	<input type="text" id="lname">
+	<br><br>
+ 
+ <label for="number">Phone Number: </label>   
+	<input type="text" name="phone" size="11"/>
+<br>
+<br>
+
+<label for="state">State</label>
+	<select id="state" name="state">
+		<option value="Johor">Johor</option>
+		<option value="Kedah">Kedah</option>
+		<option value="Kelantan">Kelantan</option>
+		<option value="Malacca">Malacca</option>
+		<option value="Negeri Sembilan">Negeri Sembilan</option>
+		<option value="Pahang">Pahang</option>
+		<option value="Penang">Penang</option>
+		<option value="Perak">Perak</option>
+		<option value="Perlis">Perlis</option>
+		<option value="Sabah">Sabah</option>
+		<option value="Sarawak">Sarawak</option>
+		<option value="Selangor">Selangor</option>
+		<option value="WP">Wilayah Persekutuan Malaysia</option>
+		<option value="Terengganu">Terengganu</option>
+		<option disabled selected value> - select a state - </option>
+	</select> 
+  
+<br>  
+<br>
+
+<label for="gender">Gender: </label>  
+	<input type="radio" name="g" id="male"> Male 
+	<input type="radio" name="g" id="female"> Female
+<br>
+<br>  
+<br>   
+<label for="user">Username: </label>
+	<input type="text" id="user">
+<br>
+<br> 
+<label for="email">Email: </label>  
+	<input type="email" id="email" name="email"/>
+<br>  
+<br>
+<label for="pw">Password:</label>
+	<input type="password" id="pw" name="pw" minlength="8">
+<br>  
+<br>
+<label for="pw">Re-Enter Password:</label>
+	<input type="password" id="pw" name="pw" minlength="8">
+<br>  
+<br>
+<br>
+<label for="robot">I am not a robot: </label>
+	<input type="checkbox" name="robot">
+<br>
+<br>
+<input type="submit" value="Submit">
+</form>  
+</div>
+</body>  
+</html>  

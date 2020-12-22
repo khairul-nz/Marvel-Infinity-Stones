@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>Marvel Cinematic Universe: Infinity Stones</title>
+</head>
+
+<style>
+
+body {
+  background-image: url('images/universe.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+	}
+
+.topnav {
+  overflow: hidden;
+  background-color: teal;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: turquoise;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+.side {
+	  -ms-flex: 30%; /* IE10 */
+	  flex: 30%;
+	  background-color: #f1f1f1;
+	  padding: 10px;
+	}
+h1.inset {
+	border-style: inset;
+	color: white;
+	font-style: italic;
+	font-size: 36px;
+	}
+footer {
+  text-align: center;
+  padding: 3px;
+  color: white;
+}
+</style>
+
+<body>
+
+<div class="topnav">
+  <a class="active">FANDOM OF MARVEL</a>
+  <a href="menu.html">Infinity Stones</a>
+  <div class="topnav-right">
+      <a href="login.html" class="right">Sign In</a>
+  </div>
+</div>
+
+<h1 style="color:white" class="inset"><i>Marvel Cinematic Universe: The Six Infinity Stones</i></h1>
+
+	<div class="side">
+		<h2>The Creation of the Stones</h2>
+		<p><i>"At the dawn of the universe, there was nothing. Then... boom. The Big Bang sent six elemental crystals hurtling across the virgin universe. These Infinity Stones each control an essential aspect of existence."</i></p>
+		<p><i>"Space, Mind, Reality, Time, Power and Soul."</i></p>
+		<h5>-Doctor Strange</h5>
+		<p>The Infinity Stones were six immensely powerful gem-like objects tied to different aspects of the universe, created by the Cosmic Entities. Each of the stones possesses unique capabilities that have been enhanced and altered by various alien civilizations for millennia.</p>
+	</div>
+	<br>
+<center>
+	<div id='container'>
+		<img id="myImage" src="images/stones.jpg" height="300">
+		<h3 id="myH" style="color: white; font-style:italic;">.</h3>
+		<p id="myP" style="color:white;">Choose the one powerful stone for yourself to own!</p>
+	</div>
+
+	<button onclick="space()">Space</button>
+	<button onclick="mind()">Mind</button>
+	<button onclick="reality()">Reality</button>
+	<button onclick="time()">Time</button>
+	<button onclick="power()">Power</button>
+	<button onclick="soul()">Soul</button>
+	<br><br>
+	<a href="#" id="myLink"><b><i>click here for the origin of the stone</i></b></a>
+	<br>
+	<br>
+	<br>
+	<br>	
+<footer>
+  <p><i>For more information of the Infinity Stones, visit this website</i><br>
+  <a href="https://marvelcinematicuniverse.fandom.com/wiki/Infinity_Stones"><b><i>Infinity Stones</i></b></a></p>
+</footer>
+
+
+<script>
+	function space() {
+		document.getElementById("myImage").src = 'images/space.jpg';
+		document.getElementById("myH").innerHTML = "The Tesseract";
+		document.getElementById("myP").innerHTML = "possess the power to manipulate space and travel to any part of the universe";
+		document.getElementById("myLink").href = "space.html";
+	}
+	function mind() {
+		document.getElementById('myImage').src='images/mind.jpg'
+		document.getElementById("myH").innerHTML = "The Scepter";
+		document.getElementById("myP").innerHTML = "a stone that can make its user to manipulate minds and telepathy";
+		document.getElementById("myLink").href = "mind.html";
+	}
+	function reality() {
+		document.getElementById('myImage').src='images/reality.jpg';
+		document.getElementById("myH").innerHTML = "The Aether";
+		document.getElementById("myP").innerHTML = "retain a power to alter reality";
+		document.getElementById("myLink").href = "reality.html";
+	}
+	function time() {
+		document.getElementById('myImage').src='images/time.jpg';
+		document.getElementById("myH").innerHTML = "The Necklace";
+		document.getElementById("myP").innerHTML = "allows the user to control the flow of time and the ability to control the past, present and future";
+		document.getElementById("myLink").href = "time.html";
+	}
+	function power() {
+		document.getElementById('myImage').src='images/power.jpg';
+		document.getElementById("myH").innerHTML = "The Orb";
+		document.getElementById("myP").innerHTML = "capable of granting the user a great, cosmic power";
+		document.getElementById("myLink").href = "power.html";
+	}
+	function soul() {
+		document.getElementById('myImage').src='images/soul.jpg';
+		document.getElementById("myH").innerHTML = "The Soul";
+		document.getElementById("myP").innerHTML = "ability to manipulate the soul itself";
+		document.getElementById("myLink").href = "soul.html";
+	}
+</script>
+</center>
+</body>
+</html>

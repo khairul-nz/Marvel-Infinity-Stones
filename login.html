@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>  
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url('images/galaxy.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+	}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.top {
+	margin: auto;
+	width: 100%;
+	border: 3px solid #FFFFF0;
+	padding: 10px;
+	background-color: #E0FFFF;
+	opacity: 0.90;
+	font-family: "Comic Sans MS";
+	text-align: center;
+	}
+</style>
+<body>
+<div class="top">
+	<h2>WELCOME BACK TO THE MARVEL</h2>
+	<p style="font-size: 16px;">don't have an account?</p>
+	<a href="register.html" ><b><i>Register Now</i></b></a>
+</div>
+
+<form action="menu.html" method="post">
+  <div class="imgcontainer">
+    <img src="images/gauntlet.jpg" height="300" width="150" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname" style="color:white"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw" style="color:white"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label for="me" style="color:white">
+      <input type="checkbox" checked="checked" name="remember">Remember me
+    </label>
+  </div>
+</form>
+
+</body>
+</html>
